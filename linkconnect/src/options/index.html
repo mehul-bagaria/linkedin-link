@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LinkConnect Settings</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <header class="topbar">
+      <div class="brand-lockup">
+        <div class="brand-mark" aria-hidden="true">
+          <span class="brand-node brand-node-left"></span>
+          <span class="brand-link"></span>
+          <span class="brand-node brand-node-right"></span>
+        </div>
+        <div>
+          <div class="brand-name">LinkConnect</div>
+          <div class="brand-caption">LinkedIn connection helper</div>
+        </div>
+      </div>
+      <div class="version-badge">Development build <span aria-hidden="true">·</span> v<span id="version">0.1.6</span></div>
+    </header>
+
+    <section class="page-header" aria-labelledby="page-title">
+      <div class="eyebrow">Settings</div>
+      <h1 id="page-title">Settings &amp; about</h1>
+      <p>Control how LinkConnect handles LinkedIn invitation dialogs and review how the extension works.</p>
+    </section>
+
+    <section class="panel" aria-labelledby="invitation-title">
+      <header class="panel-header">
+        <div>
+          <h2 id="invitation-title">Invitation preferences</h2>
+          <p>Choose what happens after LinkConnect opens an invitation.</p>
+        </div>
+        <span class="local-badge"><span class="local-dot"></span>Stored locally</span>
+      </header>
+
+      <div class="setting-row">
+        <div class="setting-copy">
+          <div class="setting-title-line">
+            <h3>Send without a note automatically</h3>
+            <span id="auto-send-state" class="setting-state">On</span>
+          </div>
+          <p id="auto-send-description">Automatically select the exact “Send without a note” action when LinkedIn displays its invitation dialog.</p>
+        </div>
+        <label class="switch">
+          <input id="auto-send-without-note" type="checkbox" aria-describedby="auto-send-description setting-guidance" checked>
+          <span class="switch-track" aria-hidden="true"></span>
+          <span class="sr-only">Send without a note automatically</span>
+        </label>
+      </div>
+
+      <div id="setting-guidance" class="setting-guidance">
+        <span class="guidance-icon" aria-hidden="true">i</span>
+        <p>When disabled, the invitation dialog remains open so you can add a note or send it manually.</p>
+      </div>
+      <div id="save-status" class="save-status" role="status" aria-live="polite"></div>
+    </section>
+
+    <section class="panel about-panel" aria-labelledby="about-title">
+      <header class="panel-header">
+        <div>
+          <h2 id="about-title">About LinkConnect</h2>
+          <p>LinkConnect helps you send one connection request at a time from an individual LinkedIn profile. It finds the Connect action, opens the invitation dialog, and follows your saved sending preference—all from a manual toolbar click.</p>
+        </div>
+        <span class="ready-badge"><span class="ready-dot"></span>Ready</span>
+      </header>
+
+      <ol class="steps">
+        <li>
+          <span class="step-number">1</span>
+          <div><strong>Open a profile</strong><p>Navigate manually to an individual LinkedIn member profile.</p></div>
+        </li>
+        <li>
+          <span class="step-number">2</span>
+          <div><strong>Click LinkConnect</strong><p>One click starts one connection-request workflow.</p></div>
+        </li>
+        <li>
+          <span class="step-number">3</span>
+          <div><strong>Review the result</strong><p>An in-page notification confirms the outcome or explains what happened.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <aside class="privacy-note" aria-label="Privacy summary">
+      <div class="privacy-icon" aria-hidden="true">✓</div>
+      <div>
+        <strong>Private by design</strong>
+        <p>No analytics, remote servers, profile databases, background crawling, or automatic campaigns.</p>
+      </div>
+    </aside>
+
+    <footer>
+      LinkConnect runs only after an explicit toolbar click. LinkedIn interfaces may change over time.
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
