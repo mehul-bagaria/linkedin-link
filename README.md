@@ -31,6 +31,8 @@ When you click the LinkConnect extension icon on an individual LinkedIn profile,
 
 LinkConnect processes only the profile currently open in your active tab.
 
+![alt text](assets/screenshots/settings-page.png)
+
 ## Install
 
 LinkConnect is currently distributed as a development build.
